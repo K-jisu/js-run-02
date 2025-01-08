@@ -11,11 +11,25 @@
  * @returns {number[]} 짝수만 포함된 새 배열
  */
 
+
 // TODO: filterEven 함수를 작성하세요.
-function filterEven() {}
+function filterEven(arr) {
+  return arr.filter((num)=> num % 2 === 0)
+  if(arr.length === 0){
+    return [];
+  }
+}
 
 // TODO: filterOdd 함수를 작성하세요.
-function filterOdd() {}
+function filterOdd(arr) {
+  return arr.filter((num)=> num % 2 !== 0)
+  if(arr.length === 0){
+    return [];
+  }
+}
+
+// filterEven(arr1)
+// filterEven(arr2)
 
 // export를 수정하지 마세요.
 export { filterEven, filterOdd };

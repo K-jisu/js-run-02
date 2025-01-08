@@ -19,12 +19,31 @@
  * @param {any} value
  * @returns {number}
  */
+const users = [
+  { name: "Alice" },
+  { name: "Bob" },
+  { name: "Charlie" },
+  { name: "Bob" },
+];
+
+// const arr = [10, 20, 30, 20, 40];
 
 // TODO: findUserByName 함수를 작성하세요.
-function findUserByName() {}
+function findUserByName(users, name) {
+  if(users.length === 0) return null;
+  return users.find((item)=>{
+    return item.name === name ? item.name === name : null
+  })
+}
 
 // TODO: findIndexOf 함수를 작성하세요.
-function findIndexOf() {}
-
+function findIndexOf(arr, value) {
+  if(users.length === 0) return null;
+  return arr.findIndex((val) => {
+    return val === value
+  });
+}
+// console.log(findUserByName(users, "Bob"));
+// console.log(findIndexOf(arr, 30));
 // export를 수정하지 마세요.
 export { findUserByName, findIndexOf };

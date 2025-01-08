@@ -23,8 +23,22 @@
  *
  */
 
-// TODO: get20sEmail 함수를 작성하세요.
-function get20sEmail() {}
+const persons = [
+  { name: "Alice", age: 25, email: "alice@example.com" },
+  { name: "Bob", age: 22, email: "bob@example.com" },
+  { name: "Charlie", age: 19, email: "charlie@example.com" },
+  { name: "David", age: 27, email: "david@example.com" },
+  { name: "Eve", age: 30, email: "eve@example.com" },
+];
 
+// TODO: get20sEmail 함수를 작성하세요.
+function get20sEmail(arr) {
+  arr.map((obj)=>{
+    obj.find((age)=>19< age && age < 30)
+  })
+}
+
+
+console.log(get20sEmail(persons))
 // export를 수정하지 마세요.
 export { get20sEmail };

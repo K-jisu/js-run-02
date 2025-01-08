@@ -16,11 +16,18 @@
  * @returns {boolean}
  */
 
+// const arr = [1, -2, 3, 4];
+
 // TODO: hasNegative 함수를 작성하세요.
-function hasNegative() {}
+function hasNegative(arr) {
+  return arr.some((num)=> num < 0)
+}
 
 // TODO: allPositive 함수를 작성하세요.
-function allPositive() {}
-
+function allPositive(arr) {
+  return arr.every((num)=> num > 0)
+}
+// console.log(hasNegative(arr)) 
+// console.log(allPositive(arr))
 // export를 수정하지 마세요.
 export { hasNegative, allPositive };
